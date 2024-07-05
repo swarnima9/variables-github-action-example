@@ -22,8 +22,7 @@ async function main() {
   //}
   //const fileKey = process.env.FILE_KEY
   const fileKey = '7jAP0w1JIJH7yHifz2lhC9'
-  //const api = new FigmaApi(process.env.PERSONAL_ACCESS_TOKEN)
-  const api = new FigmaApi('figd_s8ZpWk1a0nty8cF8Y0x4rhFL6f2JIYxaWtxeEeRV')
+  const api = new FigmaApi(process.env.PERSONAL_ACCESS_TOKEN)
   const localVariables = await api.getLocalVariables(fileKey)
 
   const tokensFiles = tokenFilesFromLocalVariables(localVariables)
